@@ -19,44 +19,36 @@ public class User {
         this.email = email;
     }
 
-    public User setPhone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
-        return this;
     }
 
-    public User setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
-        return this;
     }
 
-    public User setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
-        return this;
     }
 
-    public User setNewsletter(boolean newsletter) {
+    public void setNewsletter(boolean newsletter) {
         this.newsletter = newsletter;
-        return this;
     }
 
-    public User setAvatarUrl(String avatarUrl) {
+    public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
-        return this;
     }
 
-    public User setTimezone(String timezone) {
+    public void setTimezone(String timezone) {
         this.timezone = timezone;
-        return this;
     }
 
-    public User setReferralCode(String referralCode) {
+    public void setReferralCode(String referralCode) {
         this.referralCode = referralCode;
-        return this;
     }
 
-    public User setMarketingOptIn(boolean marketingOptIn) {
+    public void setMarketingOptIn(boolean marketingOptIn) {
         this.marketingOptIn = marketingOptIn;
-        return this;
     }
 
     @Override
