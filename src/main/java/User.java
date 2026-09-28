@@ -7,12 +7,12 @@ public class User {
     // optional
     String phone;
     String address;
-    int age;
-    boolean newsletter;
+    Integer age;
+    String newsletter;
     String avatarUrl;
     String timezone;
     String referralCode;
-    boolean marketingOptIn;
+    String marketingOptIn;
 
     public User(String username, String email) {
         this.username = username;
@@ -31,7 +31,7 @@ public class User {
         this.age = age;
     }
 
-    public void setNewsletter(boolean newsletter) {
+    public void setNewsletter(String newsletter) {
         this.newsletter = newsletter;
     }
 
@@ -47,16 +47,29 @@ public class User {
         this.referralCode = referralCode;
     }
 
-    public void setMarketingOptIn(boolean marketingOptIn) {
+    public void setMarketingOptIn(String marketingOptIn) {
         this.marketingOptIn = marketingOptIn;
     }
 
-    @Override
-    public String toString() {
-        return "User{username=" + username + ", email=" + email
-                + ", phone=" + phone + ", address=" + address
-                + ", age=" + age + ", newsletter=" + newsletter
-                + ", avatarUrl=" + avatarUrl + ", timezone=" + timezone
-                + ", referralCode=" + referralCode + ", marketingOptIn=" + marketingOptIn + "}";
+    public void userInfo(){
+        System.out.println("User: " + username + "\nEmail: " + email);
+
+        if(phone != null)
+            System.out.println("Phone: " + phone );
+        if(address != null)
+            System.out.println("Address: " + address );
+        if(age != null)
+            System.out.println("Age: " + age );
+        if(newsletter != null)
+            System.out.println("Newsletter: " + newsletter );
+        if(avatarUrl != null)
+            System.out.println("Avatar URL: " + avatarUrl );
+        if(timezone != null)
+            System.out.println("Timezone: " + timezone );
+        if(referralCode != null)
+            System.out.println("Referral code: " + referralCode );
+        if(marketingOptIn != null)
+            System.out.println("Marketing Opt-In: " + marketingOptIn );
+
     }
 }
